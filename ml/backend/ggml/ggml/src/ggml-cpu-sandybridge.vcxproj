@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{46129C0C-8F23-33E8-B16A-D712A7541B5D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ggml-cpu-sandybridge</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\PersonalWork\Github\ollama-vulkan\lib\ollama\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ggml-cpu-sandybridge.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ggml-cpu-sandybridge</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\PersonalWork\Github\ollama-vulkan\lib\ollama\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ggml-cpu-sandybridge.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ggml-cpu-sandybridge</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\PersonalWork\Github\ollama-vulkan\lib\ollama\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ggml-cpu-sandybridge.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ggml-cpu-sandybridge</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\PersonalWork\Github\ollama-vulkan\lib\ollama\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ggml-cpu-sandybridge.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ggml-cpu-sandybridge</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\include;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\.;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;GGML_BACKEND_DL;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;GGML_USE_LLAMAFILE;GGML_AVX;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;_CRT_SECURE_NO_WARNINGS;GGML_SHARED;CMAKE_INTDIR="Debug";ggml_cpu_sandybridge_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GGML_BACKEND_DL;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;GGML_USE_LLAMAFILE;GGML_AVX;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;_CRT_SECURE_NO_WARNINGS;GGML_SHARED;CMAKE_INTDIR=\"Debug\";ggml_cpu_sandybridge_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\include;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\.;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\include;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\.;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\ggml-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/PersonalWork/Github/ollama-vulkan/ml/backend/ggml/ggml/src/Debug/ggml-cpu-sandybridge.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/PersonalWork/Github/ollama-vulkan/lib/ollama/ggml-cpu-sandybridge.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\include;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\.;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GGML_BACKEND_DL;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;GGML_USE_LLAMAFILE;GGML_AVX;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;_CRT_SECURE_NO_WARNINGS;GGML_SHARED;CMAKE_INTDIR="Release";ggml_cpu_sandybridge_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GGML_BACKEND_DL;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;GGML_USE_LLAMAFILE;GGML_AVX;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;_CRT_SECURE_NO_WARNINGS;GGML_SHARED;CMAKE_INTDIR=\"Release\";ggml_cpu_sandybridge_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\include;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\.;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\include;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\.;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\ggml-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/PersonalWork/Github/ollama-vulkan/ml/backend/ggml/ggml/src/Release/ggml-cpu-sandybridge.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/PersonalWork/Github/ollama-vulkan/lib/ollama/ggml-cpu-sandybridge.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\include;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\.;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GGML_BACKEND_DL;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;GGML_USE_LLAMAFILE;GGML_AVX;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;_CRT_SECURE_NO_WARNINGS;GGML_SHARED;CMAKE_INTDIR="MinSizeRel";ggml_cpu_sandybridge_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GGML_BACKEND_DL;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;GGML_USE_LLAMAFILE;GGML_AVX;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;_CRT_SECURE_NO_WARNINGS;GGML_SHARED;CMAKE_INTDIR=\"MinSizeRel\";ggml_cpu_sandybridge_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\include;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\.;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\include;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\.;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\ggml-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/PersonalWork/Github/ollama-vulkan/ml/backend/ggml/ggml/src/MinSizeRel/ggml-cpu-sandybridge.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/PersonalWork/Github/ollama-vulkan/lib/ollama/MinSizeRel/ggml-cpu-sandybridge.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\include;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\.;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GGML_BACKEND_DL;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;GGML_USE_LLAMAFILE;GGML_AVX;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;_CRT_SECURE_NO_WARNINGS;GGML_SHARED;CMAKE_INTDIR="RelWithDebInfo";ggml_cpu_sandybridge_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GGML_BACKEND_DL;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;GGML_USE_LLAMAFILE;GGML_AVX;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;_CRT_SECURE_NO_WARNINGS;GGML_SHARED;CMAKE_INTDIR=\"RelWithDebInfo\";ggml_cpu_sandybridge_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\include;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\.;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\include;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\.;E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\ggml-base.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/PersonalWork/Github/ollama-vulkan/ml/backend/ggml/ggml/src/RelWithDebInfo/ggml-cpu-sandybridge.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/PersonalWork/Github/ollama-vulkan/lib/ollama/RelWithDebInfo/ggml-cpu-sandybridge.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/PersonalWork/Github/ollama-vulkan/ml/backend/ggml/ggml/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/PersonalWork/Github/ollama-vulkan -BE:/PersonalWork/Github/ollama-vulkan --check-stamp-file E:/PersonalWork/Github/ollama-vulkan/ml/backend/ggml/ggml/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/PersonalWork/Github/ollama-vulkan/ml/backend/ggml/ggml/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/PersonalWork/Github/ollama-vulkan -BE:/PersonalWork/Github/ollama-vulkan --check-stamp-file E:/PersonalWork/Github/ollama-vulkan/ml/backend/ggml/ggml/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/PersonalWork/Github/ollama-vulkan/ml/backend/ggml/ggml/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/PersonalWork/Github/ollama-vulkan -BE:/PersonalWork/Github/ollama-vulkan --check-stamp-file E:/PersonalWork/Github/ollama-vulkan/ml/backend/ggml/ggml/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/PersonalWork/Github/ollama-vulkan/ml/backend/ggml/ggml/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/PersonalWork/Github/ollama-vulkan -BE:/PersonalWork/Github/ollama-vulkan --check-stamp-file E:/PersonalWork/Github/ollama-vulkan/ml/backend/ggml/ggml/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu.c">
+      <ObjectFileName>$(IntDir)/ggml-cpu/ggml-cpu.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu.cpp">
+      <ObjectFileName>$(IntDir)/ggml-cpu/ggml-cpu.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-aarch64.cpp" />
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-aarch64.h" />
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-hbm.cpp" />
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-hbm.h" />
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-quants.c" />
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-quants.h" />
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-traits.cpp" />
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-traits.h" />
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx\amx.cpp" />
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx\amx.h" />
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx\mmq.cpp" />
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx\mmq.h" />
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-impl.h" />
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\llamafile\sgemm.cpp" />
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\llamafile\sgemm.h" />
+    <Object Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu-sandybridge-feats.dir\$(Configuration)\cpu-feats-x86.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\PersonalWork\Github\ollama-vulkan\ZERO_CHECK.vcxproj">
+      <Project>{2D9739B5-741C-3DE3-B9BF-47D92D003D80}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-base.vcxproj">
+      <Project>{5AF19736-327B-3848-A9E5-F6C78B4A4AF5}</Project>
+      <Name>ggml-base</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu-sandybridge-feats.vcxproj">
+      <Project>{D629C13D-9BBC-356E-950F-7E85F5E22BE1}</Project>
+      <Name>ggml-cpu-sandybridge-feats</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

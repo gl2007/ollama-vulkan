@@ -38,7 +38,12 @@ function checkEnv() {
         $script:CUDA_DIRS=$cudaList
     }
     
-    $inoSetup=(get-item "C:\Program Files*\Inno Setup*\")
+    if ($null -ne $env:INNO_SETUP_DIR ) {
+        $script:INNO_SETUP_DIR = $env:INNO_SETUP_DIR
+    } else {
+        $inoSetup=(get-item "C:\Program Files*\Inno Setup*\")
+    }
+    
     if ($inoSetup.length -gt 0) {
         $script:INNO_SETUP_DIR=$inoSetup[0]
     }

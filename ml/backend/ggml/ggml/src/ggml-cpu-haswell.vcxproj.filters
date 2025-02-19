@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-aarch64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-hbm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-quants.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-traits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx\amx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx\mmq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\llamafile\sgemm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-aarch64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-hbm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-quants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-traits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx\amx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\amx\mmq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\ggml-cpu-impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu\llamafile\sgemm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="E:\PersonalWork\Github\ollama-vulkan\ml\backend\ggml\ggml\src\ggml-cpu-haswell-feats.dir\$(Configuration)\cpu-feats-x86.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6EA45699-C6CE-3656-A98F-FE73402E7C85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{25D9D603-FF50-3115-A6D0-71621F1F5113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8975AAAB-270C-3EDF-B42B-253F216387DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

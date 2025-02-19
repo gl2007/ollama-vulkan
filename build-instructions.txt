@@ -1,0 +1,17 @@
+Build instructions for Windows:
+https://github.com/whyvl/ollama-vulkan/issues/7#issuecomment-2656349506
+
+# To run the build script, you need to have the following installed:
+powershell -Command { $env:VERSION="0.5.11-2d443b3-vulkan";$env:Path=$env:Path + ";G:\msys64\ucrt64\bin;G:\msys64\ucrt64\x86_64-w64-mingw32\bin"; .\scripts\build_windows.ps1 }
+
+Basically, separate the commands and run them, "gcc" will work after that in the same powershell session:
+powershell
+$env:VERSION="0.5.11-2d443b3-vulkan"
+$env:Path=$env:Path + ";G:\msys64\ucrt64\bin;G:\msys64\ucrt64\x86_64-w64-mingw32\bin"
+.\scripts\build_windows.ps1
+
+Two things to note:
+Successful compile (8.250 sec). Resulting Setup program filename is:
+1. E:\PersonalWork\Github\ollama-vulkan\dist\OllamaSetup.exe
+Generating stand-alone distribution zip file 
+2. E:\PersonalWork\Github\ollama-vulkan\dist\ollama-windows-amd64.zip
